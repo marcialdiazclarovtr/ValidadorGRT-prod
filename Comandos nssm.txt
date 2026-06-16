@@ -1,0 +1,19 @@
+Nombre del servicio: "ValidadorGRT_API"
+
+
+Restart-Service -Name "ValidadorGRT_API"
+
+Get-Service | Where-Object {$_.DisplayName -like "*grt*" -or $_.DisplayName -like "*api*" -or $_.DisplayName -like "*backend*"}
+
+
+***Para ver donde se están guardando los logs:
+
+nssm get "ValidadorGRT_API" AppStdout
+nssm get "ValidadorGRT_API" AppStderr
+
+
+*** Configuración de logs y reinicio
+
+C:\nssm\nssm.exe set "ValidadorGRT_API" AppStdout "C:\Users\clarobot\Desktop\GRT v2\aplicacion\grt_backend\stdout.log"
+C:\nssm\nssm.exe set "ValidadorGRT_API" AppStderr "C:\Users\clarobot\Desktop\GRT v2\aplicacion\grt_backend\stderr.log"
+C:\nssm\nssm.exe restart "ValidadorGRT_API"

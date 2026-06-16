@@ -1,0 +1,3 @@
+C:\Users\clarobot\Desktop\GRT v2\Aplicacion\GRT_backend\stderr.log
+
+C:\Users\clarobot\Desktop\GRT v2\Aplicacion\GRT_backend\stdout.log

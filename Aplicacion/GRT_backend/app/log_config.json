@@ -1,0 +1,21 @@
+﻿{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "default": {
+            "format": "%(asctime)s %(levelname)s %(message)s"
+        }
+    },
+    "handlers": {
+        "file": {
+            "class": "logging.FileHandler",
+            "filename": "C:/Users/clarobot/Desktop/GRT v2/Aplicacion/GRT_backend/app/logs/uvicorn.log",
+            "formatter": "default"
+        }
+    },
+    "loggers": {
+        "uvicorn": {"handlers": ["file"], "level": "DEBUG"},
+        "uvicorn.error": {"handlers": ["file"], "level": "DEBUG"},
+        "uvicorn.access": {"handlers": ["file"], "level": "DEBUG"}
+    }
+}

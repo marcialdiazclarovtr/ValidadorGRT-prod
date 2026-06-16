@@ -1,0 +1,22 @@
+Comandos\ git
+GRT_backend/storage
+GRT_backend/tmp
+GRT_backend/stderr.log
+GRT_backend/stdout.log
+
+**/__pycache__
+*.pyc
+
+node_modules/
+venv/
+logs/
+*.log
+
+node_modules/
+dist/
+.env
+__pycache__/
+*.pyc
+venv/
+.vscode/
+.DS_Store

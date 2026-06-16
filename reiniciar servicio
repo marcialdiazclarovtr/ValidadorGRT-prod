@@ -1,0 +1,2 @@
+C:\nssm\nssm.exe stop ValidadorGRT_API confirm
+C:\nssm\nssm.exe start ValidadorGRT_API

@@ -1,0 +1,57 @@
+Estado;Totales;;;;;;;;;;;;;;;;;
+Ok;190;;;;;;;;;;;;;;;;;
+Nok;0;;;;;;;;;;;;;;;;;
+No Aplica;0;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+Sku;Nombre;Estado;"Full Price < 250.000
+Make != Apple
+Rank Value = 1";"Full Price > 250.000 (Con IVA)
+Make != Apple
+Rank Value = 3";"Make = Apple
+Rank Value = 2";"equipmetn rank value =  4
+Equipment Classification = MDM 
+";"Equipment Classification = MDM 
+Use Category =  DATOS";"Claro UP
+Equipment Rank Value = un valor único y no puede volver a crearse.";El SKU debe ser contrastado contra la Maestra de Materiales (SAP) para validación.;"Nombre contiene “Claro Up” 
+Equipment Classification =  EUP.";"“Nombre” Contiene “Claro Up” 
+Equipment Rank Value > 20.";"Equipment Classification = EUP
+Equipment Rank Value > 20";"Postpago/ClaroUp/Prepago
+Full Price !=  900";Claro UP, los parámetros SKU, Make, Model, Color, Full Price,  Use Category y Technology deben ser los mismos que para la creación de un equipo Postpago, tomando como llave el SKU.;El parámetro valor full GRT debe ser igual al parámetro “Full Price” planillas de creación POST y Claro UP y alineado a la Base EPC.;El parámetro EQUIPMENT_SKU debe estar alineado a la creación de equipos Postpago y Claro Up.;El nombre, color y modelo del equipo debe ser menor o igual a 30 caracteres;los nombres, colores y modelos no deben contener caracteres no validós
+SMG GBK3 512NP750 PL POST EMP;70014209;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+SMG GTBA964GBX115 GA POST EMP;70014211;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA 17ULTRA512GB BK POST EMP;70016212;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA 17ULTRA512GB GE POST EMP;70016196;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT ED60P512GX7 1 AZ POST EMP;70015260;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT ED60P512GX7 1 GR POST EMP;70015264;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 GR POST EMP;70015644;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 GZ POST EMP;70015637;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 HT POST EMP;70015665;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 JT POST EMP;70015661;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 NG POST EMP;70015669;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 NJ POST EMP;70015656;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+MOT G35256GXT2433 VR POST EMP;70015652;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+APP IPH17PRMAX1TB CQ POST EMP;70015487;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+APP IPH17PRMAX1TB DH POST EMP;70015511;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+APP IPH17PRMAX1TB SV POST EMP;70015483;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MAGIC8LT512G DO POST EMP;70016018;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MAGIC8LT512G MK POST EMP;70015953;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MAGIC8LT512G NG POST EMP;70015995;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MAGIC8LT512G UD POST EMP;70016002;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MAGIC8LT512G VR POST EMP;70015990;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MGC8LT512G MK PST EMP X8 B;70016014;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+HOR MAGIC8PRO512G UD POST EMP;70016200;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+ZTE NFOC25G256 8G AZ POST EMP;70014089;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+ZTE NFOC25G256 8G BL POST EMP;70014090;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+ZTE NFOC25G256 8G NG POST EMP;70014091;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDMNT155G256G BK POST EMP;70016111;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDMNT155G256G ZB POST EMP;70016115;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDMNT155G256G BK PST EMP B;70016152;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDMNT155G256G ZB PST EMP B;70016156;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDNT15PR5G512 BK POST EMP;70016119;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDNT15PR5G512 TT POST EMP;70016123;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDNT15PR5G512 BK PST EMP B;70016180;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RDNT15PR5G512 TT PST EMP B;70016184;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RMNT15PPL512G BK POST EMP;70016127;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RMNT15PPL512G MA POST EMP;70016130;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RMNT15PPL512G BK PST EMP S;70016188;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok
+XIA RMNT15PPL512G M PST EMP S ;70016192;;Ok;;;;;;;;;;Ok;;Ok;;Ok;Ok

@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.app-with-data {
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upload-container {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+.app-with-data .upload-container {
+  margin-left: 5%;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.main-content {
+  display: flex;
+  gap: 0;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px; 
+  min-width: 350px;
+  position: relative;
+}
+
+.upload-area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #e0e0e0;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  max-width: 500px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-icon {
+  margin-bottom: 0;
+}
+
+/* Estilos comunes para ambos botones */
+.browse-button,
+.generate-button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+/* Botón Subir planillas - azul */
+.browse-button {
+  background-color: #4A90E2;
+}
+
+.browse-button:hover {
+  background-color: #357ABD;
+}
+
+/* Botón Comparar GRT - verde */
+.generate-button {
+  background-color: #28a745;
+}
+
+.generate-button:hover {
+  background-color: #218838;
+}
+
+.files-section {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+  margin-top: -0.6%;
+}
+
+/* Centrar cuando hay datos de Excel */
+.app-with-data .files-section {
+  justify-content: center;
+  align-items: center;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+/* Centrar lista cuando hay datos */
+.app-with-data .files-list {
+  align-items: center;
+}
+
+.no-files {
+  color: #999;
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: center;
+  padding: 0; /* El espacio ya lo da el margin-bottom de .files-title-container */
+  width: 100%;
+}
+
+/* Estilos para la lista de archivos */
+.files-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.files-list li {
+  color: #333;
+  font-size: 0.95rem;
+  padding: 2px 0;
+  text-align: left;
+}
+
+/* Estilos para el contenido de Excel */
+.excel-content {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.file-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.file-content h2 {
+  font-size: 1.3rem;
+  color: #222;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #4A90E2;
+}
+
+.sheet-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sheet-content h3 {
+  font-size: 1.1rem;
+  color: #4A90E2;
+  padding: 10px;
+  background-color: #f0f7ff;
+  border-radius: 8px;
+}
+
+.sheet-content table {
+  width: auto;
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sheet-content table th {
+  background-color: #4A90E2;
+  color: white;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.sheet-content table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sheet-content table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.sheet-content table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Estilos para el item de archivo con checkbox */
+.file-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0; 
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  width: 100%;
+  padding: 5px 8px;    /* <--- El 8px aquí hace que se alinee con el 'left: 8px' de arriba */
+  justify-content: flex-start;
+}
+
+.checkbox-container:hover {
+  background-color: #f5f5f5;
+}
+
+/* Oculta el checkbox nativo */
+.file-checkbox {
+  display: none;
+}
+
+/* Checkbox circular personalizado */
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4A90E2;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+/* Cuando está seleccionado */
+.file-checkbox:checked + .checkbox-custom {
+  background-color: #4A90E2;
+  border-color: #4A90E2;
+}
+
+/* Marca de check dentro del círculo */
+.file-checkbox:checked + .checkbox-custom::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.file-name {
+  color: #333;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.files-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px; /* Distancia hacia el primer archivo */
+  padding: 0;          /* Quitamos padding lateral para control total con el absolute */
+  position: relative;
+  width: 100%;
+}
+
+.files-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  position: static;
+  transform: none;
+  white-space: nowrap;
+}
+
+.checkbox-all {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 8px;           /* <--- Punto de alineación clave */
+  top: 0;
+  transform: translateY(5px); /* Ajuste manual para que el círculo quede a la altura del texto */
+  z-index: 10;
+}
+
+.checkbox-all:hover {
+  background-color: transparent;
+}
+
+/* ===== Ajuste alineación tabla GRT ===== */
+
+/* Mantén encabezados intactos */
+.grt-table th {
+  padding-left: 12px;
+  padding-bottom: 9px;
+}
+
+/* Corre SOLO los valores */
+.grt-table td {
+  padding-left: 36px;
+}
+
+.upload-area {
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.upload-area.drag-over {
+  border: 2px dashed #4A90E2;
+  background: rgba(74, 144, 226, 0.08);
+  border-radius: 8px;
+}
+
+.resumen-global {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.resumen-global th {
+  background-color: #6c757d;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+.resumen-global td {
+  padding: 8px;
+  text-align: center;
+}
+
+.resumen-global td:first-child {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.resumen-global tr:nth-child(even) td:first-child {
+  background-color: #c82333;
+}
+
+/* SOLO cuando hay 4 botones */
+.buttons-container.four-buttons {
+  display: flex;
+  flex-wrap: wrap;       /* Permite el salto a la siguiente fila */
+  justify-content: center;
+  gap: 20px 30px;        /* Espacio vertical (20px) y horizontal (30px) */
+  max-width: 450px;      /* 👈 Ajusta este ancho para que el 3er botón "no quepa" arriba */
+  margin: 0 auto;
+}
+
+/* Para que queden 2x2 */
+.buttons-container.four-buttons .button-group {
+  flex: 0 1 40%;         /* Cada grupo ocupa cerca del 40-45% del ancho */
+  min-width: 180px;      /* Evita que los botones se achiquen demasiado */
+}

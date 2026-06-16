@@ -1,0 +1,30 @@
+Front end: 
+
+http://10.41.3.55/
+
+
+Directorio donde hay que pegar el dist resultante de npm run build para actualizar el front 
+
+La carpeta dist está en C:\Users\clarobot\Desktop\GRT v2\Aplicacion\GRT_frontend\dist
+
+
+
+Hay que pegar lo que queda dentro de esa carpeta en la carpeta 
+
+C:\inetpub\validadorGRT
+
+
+**Resetear el backend sin perder los logs:
+
+C:\nssm\nssm.exe restart "ValidadorGRT_API"
+
+
+
+
+Para actualizar el servicio después de hacer cambios en el backend:
+
+Restart-Service -Name "ValidadorGRT_API"
+
+
+
+
